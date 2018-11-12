@@ -1,0 +1,21 @@
+use master
+go
+
+IF EXISTS (SELECT [name] FROM sys.databases WHERE [name] LIKE N'USLS')
+	DROP DATABASE [USLS]
+GO
+
+CREATE DATABASE [USLS]
+GO
+
+USE  [USLS]
+GO
+
+CREATE TABLE [dbo].[Students]
+(
+	[StudentID]		INT		IDENTITY(101,1) NOT NULL,
+	[FirstName]		NVARCHAR (100) NULL,
+	[LastName]		NVARCHAR (100) NULL,
+	[ContactNumber] NVARCHAR (11) NULL,
+	CONSTRAINT [PK_Students]	PRIMARY KEY CLUSTERED ([StudentID] ASC) 
+);
