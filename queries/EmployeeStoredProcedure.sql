@@ -89,6 +89,7 @@ SET NOCOUNT OFF
 			OR (CONCAT (LastName, ', ' , FirstName ) Like '%' + @Keywords + '%')
 			OR (CONCAT (LastName, ',' , FirstName ) Like '%' + @Keywords + '%')  
 GO
+
 IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'usp_EmployeeMasterList')
 	DROP PROCEDURE [usp_EmployeeMasterList]
 GO
@@ -96,3 +97,32 @@ CREATE PROCEDURE [usp_EmployeeMasterList]
 AS
 SELECT * FROM Employees
 RETURN
+
+IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'usp_EmployeeDataUpdate')
+	DROP PROCEDURE [usp_EmployeeDataUpdate]
+GO
+CREATE PROCEDURE [usp_EmployeeDataUpdate]
+(
+	@FirstName NVARCHAR(100),
+	@LastName NVARCHAR(100),
+	@Contact NVARCHAR(11),
+	@EmpID INT
+)
+WITH ENCRYPTION 
+AS
+SET NOCOUNT OFF
+	UPDATE Employees SET FirstName = @FirstName,LastName = @LastName, ContactNumber = @Contact Where EmpID = @EmpID;
+GO
+
+IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'usp_EmployeeIndividualRecord')
+	DROP PROCEDURE [usp_EmployeeIndividualRecord]
+GO
+CREATE PROCEDURE [usp_EmployeeIndividualRecord]
+(
+	@EmpID INT
+)
+WITH ENCRYPTION 
+AS
+SET NOCOUNT OFF
+	SELECT * FROM Employees where EmpID = @EmpID;
+GO

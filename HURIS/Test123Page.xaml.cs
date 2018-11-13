@@ -35,28 +35,9 @@ namespace HURIS
             //connetionString = "Data Source=192.168.1.200;Initial Catalog=USLS;User ID=sa;Password=Hybrain2018";
             connetionString = "Data Source=JUSTINE-PC;Initial Catalog=SampleDatabase;User ID=justin;Password=123";
             connection = new SqlConnection(connetionString);
-            LoadData(null);
         }
 
-        private void SaveData()
-        {
-            connection.Open();
-            string fname = txtFirstName.Text.ToString();
-            string lname = txtLastName.Text.ToString();
-            string contact = txtContact.Text.ToString();
-
-            SqlCommand cmd = new SqlCommand("usp_EmployeeRegister", connection);
-            cmd.Parameters.AddWithValue("@fname", fname);
-            cmd.Parameters.AddWithValue("@lname", lname);
-            cmd.Parameters.AddWithValue("@contact", contact);
-
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.ExecuteNonQuery();
-            connection.Close();
-            MessageBox.Show("Successful!");
-            LoadData(null);
-        }
+      
 
         private void LoadData(string Keywords)
         {
@@ -69,6 +50,7 @@ namespace HURIS
             
             //Sends the  parameter keyword to the query
             cmd.Parameters.AddWithValue("@Keywords", Keywords);
+
 
             //Loading the table
             DataTable dt = new DataTable();
@@ -87,7 +69,13 @@ namespace HURIS
             //or
             //dataGridView1.ItemsSource = dt.DefaultView;
         }
-
+        
+    
+        private void AddEmployee()
+        {
+            EmployeeRegistrationForm add = new EmployeeRegistrationForm();
+             add.Show();    
+        }
 
         private void ClickButtonEvent(object sender, RoutedEventArgs e)
         {
@@ -96,11 +84,26 @@ namespace HURIS
                 //Detects what's the value of sender
                 if (sender == btnSearch)
                     LoadData(txtSearch.Text);
-                else if (sender == btnSubmit)
-                    SaveData();
+                else if (sender == btnAddEmployee)
+                    AddEmployee();
+                   // SaveData();
+        
             }
             catch (Exception ex)
             { MessageBox.Show(ex.ToString()); }
+        }
+
+        private void btnEdit(object sender, RoutedEventArgs e)
+        {
+
+            DataRowView rowview = dataGridView1.SelectedItem as DataRowView;
+            string id = rowview.Row["EmpID"].ToString();
+
+    
+      
+            EmployeeDataEditWindow edt = new EmployeeDataEditWindow(id);
+            edt.Show();
+     
         }
     }
 }

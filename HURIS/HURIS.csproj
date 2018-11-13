@@ -59,8 +59,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Attendance.xaml.cs">
-      <DependentUpon>Attendance.xaml</DependentUpon>
+    <Compile Include="AttendancePage.xaml.cs">
+      <DependentUpon>AttendancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataEditWindow.xaml.cs">
+      <DependentUpon>EmployeeDataEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRegistrationForm.xaml.cs">
+      <DependentUpon>EmployeeRegistrationForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Leaves.xaml.cs">
       <DependentUpon>Leaves.xaml</DependentUpon>
@@ -68,13 +74,13 @@
     <Compile Include="Sample.xaml.cs">
       <DependentUpon>Sample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test123.xaml.cs">
-      <DependentUpon>Test123.xaml</DependentUpon>
+    <Compile Include="Test123Page.xaml.cs">
+      <DependentUpon>Test123Page.xaml</DependentUpon>
     </Compile>
-    <Page Include="Attendance.xaml">
+    <Page Include="AttendancePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,11 +92,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Department.xaml">
+    <Page Include="DepartmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employees.xaml">
+    <Page Include="EmployeeDataEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeeRegistrationForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,17 +126,17 @@
     <Compile Include="DashboardContent.xaml.cs">
       <DependentUpon>DashboardContent.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Department.xaml.cs">
-      <DependentUpon>Department.xaml</DependentUpon>
+    <Compile Include="DepartmentPage.xaml.cs">
+      <DependentUpon>DepartmentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employees.xaml.cs">
-      <DependentUpon>Employees.xaml</DependentUpon>
+    <Compile Include="EmployeesPage.xaml.cs">
+      <DependentUpon>EmployeesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PayrollManagement.xaml">
+    <Page Include="PayrollManagementPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,18 +144,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Settings.xaml">
+    <Page Include="SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Test123.xaml">
+    <Page Include="Test123Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PayrollManagement.xaml.cs">
-      <DependentUpon>PayrollManagement.xaml</DependentUpon>
+    <Compile Include="PayrollManagementPage.xaml.cs">
+      <DependentUpon>PayrollManagementPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

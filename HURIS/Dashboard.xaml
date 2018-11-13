@@ -97,6 +97,6 @@
             </StackPanel>
             <Label FontSize="9" Padding="10 12" VerticalAlignment="Bottom" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#DD423F3F" FontStyle="Italic" >Powered by HYBrain Dev Corp</Label>
         </Grid>
-        <Frame x:Name="Content" NavigationUIVisibility="Hidden" Margin="210,50,0,0"></Frame>
+        <Frame x:Name="Content"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  NavigationUIVisibility="Hidden" Margin="210,50,0,0"></Frame>
     </Grid>
 </Window>
