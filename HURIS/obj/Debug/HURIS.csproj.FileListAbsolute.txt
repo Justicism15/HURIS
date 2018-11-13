@@ -32,4 +32,12 @@ C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Set
 C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Attendance.g.cs
 C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Leaves.g.cs
 C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Settings.g.cs
-C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\HURIS.csprojResolveAssemblyReference.cache
+C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Sample.baml
+C:\Users\Justine\documents\visual studio 2013\Projects\HURIS\HURIS\obj\Debug\Sample.g.cs
+C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\obj\Debug\Test123.g.cs
+C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\obj\Debug\HURIS_MarkupCompile.lref
+C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\obj\Debug\Test123.baml
+C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\obj\Debug\HURIS.csprojResolveAssemblyReference.cache
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\bin\Debug\HURIS.exe.config
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.exe
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.pdb

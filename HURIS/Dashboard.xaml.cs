@@ -33,13 +33,16 @@ namespace HURIS
 
         private void btnEmployees(object sender, MouseButtonEventArgs e)
         {
-            Content.Content = new Employees();
-
+            //Content.Content = new Employees();
+            Content.Navigate(new Test123());
+            //Sample samp = new Sample();
+            //samp.Show();
         }
 
         private void btnDashboard(object sender, MouseButtonEventArgs e)
         {
             Content.Content = new DashboardContent();
+          
         }
 
         private void btnSettings(object sender, MouseButtonEventArgs e)

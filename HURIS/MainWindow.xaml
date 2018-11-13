@@ -26,8 +26,8 @@
         <Image Source="/Images/EMP.jpg"  Stretch="Fill" Grid.RowSpan="11"/>
         <Image Source="/Images/hurissmall.png"  Stretch="None" Grid.RowSpan="2" Grid.Column="1"/>
 
-        <Label FontSize="14" Padding="10 10" Grid.Row="2" Grid.Column="1" FontWeight="Bold" Foreground="#DD0C0C0C" >Username</Label>
-        <Label FontSize="14" Padding="10 10" Grid.Row="4" Grid.Column="1" FontWeight="Bold" Foreground="#DD191818" >Password</Label>
+        <Label FontSize="14" Padding="10 10" Grid.Row="2" Grid.Column="1" FontWeight="Bold" Foreground="#DD0C0C0C" Content="Username"/>
+        <Label FontSize="14" Padding="10 10" Grid.Row="4" Grid.Column="1" FontWeight="Bold" Foreground="#DD191818" Content="Password"/>
 
         <Border BorderThickness="1" Width="293" Grid.Column="1" Grid.Row="3" BorderBrush="Black" CornerRadius="5" Padding="6" HorizontalAlignment="Center" VerticalAlignment="Center" >
             <TextBox Name="txtUsername" BorderThickness="0"></TextBox>
@@ -36,7 +36,7 @@
          <PasswordBox Name="txtPassword"  BorderThickness="0" PasswordChar="*"></PasswordBox>
         </Border>
         
-        <Button Click="btnLogin" Grid.Row="7" Grid.RowSpan="2" Grid.Column="1" Margin="20 3" FontSize="12"   Height="40" Foreground="White">
+        <Button x:Name="btnLogin" Click="ClickButtonEvent" Grid.Row="7" Grid.RowSpan="2" Grid.Column="1" Margin="20 3" FontSize="12"   Height="40" Foreground="White">
             <Button.Template >
                 <ControlTemplate>
                     <Border  CornerRadius="10" >
@@ -53,6 +53,6 @@
             </Button.Template>
         </Button>
         <Label FontSize="9" Padding="10 12" Grid.Row="10" Grid.Column="1" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#DD191818" FontStyle="Italic" >Powered by HYBrain Dev Corp</Label>
-
+       
     </Grid>
 </Window>

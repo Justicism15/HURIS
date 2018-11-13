@@ -38,12 +38,13 @@ namespace HURIS
         {
             //Initializing and connecting to database.
             InitializeComponent();
-            connetionString = "Data Source=192.168.1.200;Initial Catalog=USLS;User ID=sa;Password=Hybrain2018";
-            connection = new SqlConnection(connetionString);
-            
+            connetionString = "Data Source=JUSTINE-PC;Initial Catalog=SampleDatabase;User ID=justin;Password=123";
+            connection = new SqlConnection(connetionString);    
         }
 
-        public void btnLogin(object sender, RoutedEventArgs e)
+      
+
+        private void Login()
         {
             connection.Open();
             string username = txtUsername.Text.ToString();
@@ -51,11 +52,9 @@ namespace HURIS
             con.Connection = connection;
             
             //Stored Procedures
-            SqlParameter param = new SqlParameter("@username", username);
-            SqlParameter param1 = new SqlParameter("@password", password);
-            SqlCommand cmd = new SqlCommand("usp_Login", connection);
-            cmd.Parameters.Add(param);
-            cmd.Parameters.Add(param1);
+            SqlCommand cmd = new SqlCommand("usp_EmployeeLogin", connection);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
 
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -78,6 +77,14 @@ namespace HURIS
                 MessageBox.Show("Username and password is incorrect", "Windows Message", MessageBoxButton.OKCancel, MessageBoxImage.Stop);
 
             connection.Close();
+        }
+
+        private void ClickButtonEvent(object sender, RoutedEventArgs e)
+        {
+            if(sender == btnLogin)
+            {
+                Login();
+            }
         }
     }
 }

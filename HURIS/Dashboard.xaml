@@ -61,7 +61,7 @@
                         </StackPanel>
                     </ListViewItem>
 
-                    <ListViewItem Height="50" MouseLeftButtonUp="btnEmployees">
+                    <ListViewItem Height="50" MouseLeftButtonUp="btnEmployees" >
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="People" Width="25" Height="25"/>
                             <TextBlock x:Name="txtEmployees" Text="Employees" VerticalAlignment="Center" Margin="15,0,0,0" FontFamily="Raleway ExtraBold" FontSize="14" MouseLeftButtonUp="btnEmployees"/>

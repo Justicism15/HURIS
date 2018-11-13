@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\obj\Debug\
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\
 HURIS
 none
 false
 DEBUG;TRACE
-C:\Users\Justine\Documents\Visual Studio 2013\Projects\HURIS\HURIS\App.xaml
-91621666847
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\App.xaml
+11520768080
 
-17-17067560
-146062500
-Attendance.xaml;Dashboard.xaml;DashboardContent.xaml;Department.xaml;Employees.xaml;Leaves.xaml;MainWindow.xaml;PayrollManagement.xaml;Settings.xaml;
+19-413294177
+14-742347835
+Attendance.xaml;Dashboard.xaml;DashboardContent.xaml;Department.xaml;Employees.xaml;Leaves.xaml;MainWindow.xaml;PayrollManagement.xaml;Sample.xaml;Settings.xaml;Test123.xaml;
 
-False
+True
 
