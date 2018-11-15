@@ -47,7 +47,7 @@
                                 <GradientStop Color="#FF2EAFF9" Offset="0.891"/>
                             </LinearGradientBrush>
                         </Border.Background>
-                        <TextBlock Margin="0 8" HorizontalAlignment="Center"  Text="UPDATE" FontFamily="Roboto"></TextBlock>
+                        <TextBlock Margin="0 10" HorizontalAlignment="Center"  Text="UPDATE" FontFamily="Roboto"></TextBlock>
                     </Border>
                 </ControlTemplate>
             </Button.Template>

@@ -55,35 +55,36 @@
         </Button>-->
 
         <Label Content="EMPLOYEES" FontSize="25" Margin="10,5,5,4" FontFamily="Roboto" Grid.Row="1" Grid.RowSpan="2"/>
-        <Separator Grid.Row="2" Margin="24,2,10,2"></Separator>
-        <StackPanel Grid.Row="3" Grid.RowSpan="2" Background="#FF5BA1FF" Margin="10,0">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="btnAddEmployee" Grid.Column="1" Margin="0,15,10,-10" Click="ClickButtonEvent" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right"  Content="Add Employee" Width="120" Height="40" BorderBrush="{x:Null}" ForceCursor="True"/>
-                <Label HorizontalAlignment="Left" FontSize="20" Content="EMPLOYEE LIST" Foreground="White" FontFamily="Montserrat" Margin="10,16,0,-16"/>
-            </Grid>
-        </StackPanel>
-        <StackPanel  Margin="0,0,10,0" Orientation="Horizontal"  Grid.Row="5" HorizontalAlignment="Right" Width="382">
-
-            <Border BorderThickness=".7" BorderBrush="#FFC1BBBB" CornerRadius="5" Padding="0 5" Margin="15,3,10,0" Width="235">
-                <TextBox x:Name="txtSearch" BorderThickness="0" HorizontalAlignment="Left" Width="350" Margin="5 0" >
-                    <TextBox.BorderBrush>
-                        <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                            <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                            <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                            <GradientStop Color="#FFE7EAEE" Offset="1"/>
-                        </LinearGradientBrush>
-                    </TextBox.BorderBrush>
-                </TextBox>
+        <Separator Grid.Row="2" Margin="10,2,10,2"></Separator>
+        <Border Grid.Row="3" Grid.RowSpan="12"  Margin="10,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="900" MinHeight="500" BorderBrush="Gray" CornerRadius="3,3,3,3" BorderThickness="1">
+                <StackPanel VerticalAlignment="Top" Background="#F2F3F4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="btnAddEmployee" Grid.Column="1" Margin="0,15,10,-10" Click="ClickButtonEvent" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right"  Content="Add Employee" Width="120" Height="40" BorderBrush="{x:Null}" ForceCursor="True"/>
+                        <Label HorizontalAlignment="Left" FontSize="20" Content="EMPLOYEE LIST" Foreground="#FF211F1F" FontFamily="Montserrat" Margin="10,10,0,10"/>
+                    </Grid>
+                </StackPanel>
             </Border>
-            <Button x:Name="btnSearch" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right" Margin="0,3,0,0" Content="Search" Width="124" Click="ClickButtonEvent" BorderBrush="{x:Null}" ForceCursor="True"/>
-        </StackPanel>
+            <StackPanel  Margin="0,0,15,0" Orientation="Horizontal"  Grid.Row="5" HorizontalAlignment="Right" Width="382">
+                <Border BorderThickness=".7" BorderBrush="#FFC1BBBB" CornerRadius="5" Padding="0 5" Margin="15,5,10,0" Width="235">
+                    <TextBox x:Name="txtSearch" Text="Enter Employee Name" BorderThickness="0" HorizontalAlignment="Left" Width="350" Margin="5 0" >
+                        <TextBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                                <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                                <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                                <GradientStop Color="#FFE7EAEE" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.BorderBrush>
+                    </TextBox>
+                </Border>
+                <Button x:Name="btnSearch" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right" Margin="0,3,0,0" Content="Search" Width="124" Click="ClickButtonEvent" BorderBrush="{x:Null}" ForceCursor="True"/>
+            </StackPanel>
 
-        <DataGrid Name="dataGridView1" MinWidth="900" MinHeight="500"  Grid.Row="6" Grid.RowSpan="7" HorizontalAlignment="Stretch" 
-          VerticalAlignment="Stretch" IsSynchronizedWithCurrentItem="False" BorderBrush="{x:Null}" Margin="10,0,10,8"
+            <DataGrid Name="dataGridView1" MinWidth="900" MinHeight="500"  Grid.Row="6" Grid.RowSpan="5" HorizontalAlignment="Stretch" 
+          VerticalAlignment="Stretch" IsSynchronizedWithCurrentItem="False" BorderBrush="{x:Null}" Margin="10,0,10,-320"
              AutoGenerateColumns="True"
                   SelectionMode="Extended">
                 <DataGrid.Columns>
@@ -99,6 +100,5 @@
                 </DataGrid.Columns>
             </DataGrid>
             <!--SelectionChanged="dgStudentList_SelectionChanged"-->
-      
     </Grid>
 </Page>

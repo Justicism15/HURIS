@@ -42,7 +42,6 @@ C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Att
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Dashboard.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\DashboardContent.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\DepartmentPage.baml
-C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeesPage.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Leaves.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\MainWindow.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\PayrollManagementPage.baml
@@ -54,7 +53,7 @@ C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Das
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\DashboardContent.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\DepartmentPage.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeDataEditWindow.g.cs
-C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeesPage.g.cs
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeRegistrationForm.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Leaves.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\MainWindow.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\PayrollManagementPage.g.cs
@@ -72,12 +71,15 @@ C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\bin\Debug\Mat
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\bin\Debug\MaterialDesignColors.pdb
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeesPage.g.cs
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeDataEditWindow.baml
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeRegistrationForm.baml
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeesPage.baml
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Resources\Styles\Dictionary1.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\Test123Page.baml
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.g.resources
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.Properties.Resources.resources
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.csproj.GenerateResource.Cache
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.exe
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.pdb
-C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeRegistrationForm.g.cs
-C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\EmployeeRegistrationForm.baml
+C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.csprojResolveAssemblyReference.cache

@@ -34,7 +34,7 @@ namespace HURIS
         private void btnEmployees(object sender, MouseButtonEventArgs e)
         {
             //Content.Content = new Employees();
-            Content.Navigate(new Test123());
+            Content.Navigate(new Employees());
             //Sample samp = new Sample();
             //samp.Show();
         }

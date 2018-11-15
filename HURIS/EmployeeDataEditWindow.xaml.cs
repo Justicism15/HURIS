@@ -74,13 +74,12 @@ namespace HURIS
                 cmd.Parameters.AddWithValue("@EmpID", id);
 
                 cmd.ExecuteNonQuery();
-
+                DialogResult = true;
+                connection.Close();
                 MessageBox.Show("Updated Successfully!");
 
-                this.Close();
-
-
-                connection.Close();
+    
+             
             }
             catch(Exception e)
             {

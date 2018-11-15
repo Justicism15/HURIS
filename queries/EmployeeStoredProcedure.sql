@@ -1,5 +1,4 @@
 --stored procedure
-
 use SampleDatabase
 go
 

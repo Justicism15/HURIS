@@ -62,6 +62,8 @@
     <Compile Include="AttendancePage.xaml.cs">
       <DependentUpon>AttendancePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Connections\DBConnectionController.cs" />
+    <Compile Include="Controller\EmployeesController.cs" />
     <Compile Include="EmployeeDataEditWindow.xaml.cs">
       <DependentUpon>EmployeeDataEditWindow.xaml</DependentUpon>
     </Compile>
@@ -71,6 +73,7 @@
     <Compile Include="Leaves.xaml.cs">
       <DependentUpon>Leaves.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\EmployeesModel.cs" />
     <Compile Include="Sample.xaml.cs">
       <DependentUpon>Sample.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Styles\Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -198,9 +205,7 @@
   <ItemGroup>
     <Resource Include="Images\huris-smallwhite.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

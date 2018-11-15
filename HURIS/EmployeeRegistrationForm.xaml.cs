@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Controls;
+
 
 namespace HURIS
 {
@@ -45,16 +45,18 @@ namespace HURIS
             string contact = txtContact.Text.ToString();
 
             SqlCommand cmd = new SqlCommand("usp_EmployeeRegister", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@fname", fname);
             cmd.Parameters.AddWithValue("@lname", lname);
             cmd.Parameters.AddWithValue("@contact", contact);
 
-            cmd.CommandType = CommandType.StoredProcedure;
-
+  
             cmd.ExecuteNonQuery();
+
             connection.Close();
+
             MessageBox.Show("Successful!");
-      
+            DialogResult = true;
         }
 
     
@@ -63,7 +65,10 @@ namespace HURIS
         private void ClickButtonEvent(object sender, RoutedEventArgs e)
         {
             if (sender == btnSubmit)
+            {
                 SaveData();
+            }
+             
         }
     }
 }
