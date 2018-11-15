@@ -6,12 +6,14 @@
     <Grid>
 
         <Grid Height="50" VerticalAlignment="Top" Background="White">
-            <Border BorderThickness="1" BorderBrush="#FFDAD9D9" Margin="209,0,10,0">
-           
-                  
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="222,18,0,18">
+                <TextBlock Text="Human Resource Information System" VerticalAlignment="Center" Foreground="#FF4F4D4D" FontFamily="Roboto"/>
+            </StackPanel>
+            <Border BorderThickness="1" BorderBrush="#FFDAD9D9" Margin="209,0,0,0">
                 <!--<TextBlock Text="Attendance System" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="White" FontFamily="Raleway ExtraBold" FontStyle="Italic"></TextBlock>-->
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
-                    <TextBlock Text="Human Resource Information System"  HorizontalAlignment="Left" Foreground="#FF4F4D4D" FontFamily="Roboto"/>
+                   
                     <TextBlock Text="Welcome, Justine Espinosa" VerticalAlignment="Center" Foreground="#FF4F4D4D" FontFamily="Roboto"/>
                     <materialDesign:PopupBox HorizontalAlignment="Right" Margin="0" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Background="Gray" Foreground="#FF4F4D4D">
                         <StackPanel Width="150" Background="White">
@@ -35,18 +37,14 @@
                     </Grid.Background>-->
                     <Image Source="/images/huris-smallwhite.png"  Stretch="None" Margin="0,0,0,10"/>
                 </Grid>
- 
-                <ListView Background="#273746" Foreground="White" BorderBrush="{x:Null}">
 
+                <ListView Background="#273746" Foreground="White" BorderBrush="{x:Null}">
                     <ListViewItem Height="50" MouseLeftButtonUp="btnDashboard">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="ViewDashboard" Width="25" Height="25"/>
                             <TextBlock Text="Dashboard" VerticalAlignment="Center" Margin="18,0,0,0" FontFamily="Raleway ExtraBold" FontSize="12" MouseLeftButtonDown="btnDashboard"/>
-
                         </StackPanel>
-
                     </ListViewItem>
-
                     <ListViewItem Height="50" MouseLeftButtonUp="btnAttendance">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="CheckBox" Width="25" Height="25"/>
@@ -59,30 +57,24 @@
                             <TextBlock Text="Leaves" VerticalAlignment="Center" Margin="18,0,0,0" FontFamily="Raleway ExtraBold" FontSize="12" MouseLeftButtonUp="btnLeaves"/>
                         </StackPanel>
                     </ListViewItem>
-
                     <ListViewItem Height="50" MouseLeftButtonUp="btnEmployees" >
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="People" Width="25" Height="25"/>
                             <TextBlock x:Name="txtEmployees" Text="Employees" VerticalAlignment="Center" Margin="18,0,0,0" FontFamily="Raleway ExtraBold" FontSize="12" MouseLeftButtonUp="btnEmployees"/>
                         </StackPanel>
                     </ListViewItem>
-
                     <ListViewItem Height="50" MouseLeftButtonUp="btnDepartment">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="OfficeBuilding" Width="25" Height="25"/>
                             <TextBlock x:Name="txtDepartment" Text="Department" VerticalAlignment="Center" Margin="18,0,0,0" FontFamily="Raleway ExtraBold" FontSize="12" MouseLeftButtonUp="btnDepartment"/>
                         </StackPanel>
                     </ListViewItem>
-
-
-
                     <ListViewItem Height="50" MouseLeftButtonUp="btnPayroll">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Money" Width="25" Height="25"/>
                             <TextBlock Text="Payroll Management" VerticalAlignment="Center" Margin="18,0,0,0" FontFamily="Raleway ExtraBold" FontSize="12" MouseLeftButtonUp="btnPayroll"/>
                         </StackPanel>
                     </ListViewItem>
-
                     <ListViewItem Height="50" MouseLeftButtonUp="btnSettings">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Account" Width="25" Height="25"/>
@@ -91,11 +83,11 @@
                     </ListViewItem>
                 </ListView>
                 <!--<Grid Height="50" Background="Black">
-    
                 </Grid>-->
             </StackPanel>
             <Label FontSize="9" Padding="10 12" VerticalAlignment="Bottom" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White" FontStyle="Italic" >Powered by HYBrain Dev Corp</Label>
         </Grid>
-        <Frame x:Name="Content"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  NavigationUIVisibility="Hidden" Margin="210,50,0,-10" Background="#FFF7F7F7"></Frame>
+        <Frame x:Name="Content"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  NavigationUIVisibility="Hidden" Margin="210,50,0,-10" Background="#FFF7F7F7" Panel.ZIndex="0"></Frame>
+        <Frame x:Name="Forms"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  NavigationUIVisibility="Hidden" Margin="210,50,0,-10" Background="#FFF7F7F7" Panel.ZIndex="1"></Frame>
     </Grid>
 </Window>

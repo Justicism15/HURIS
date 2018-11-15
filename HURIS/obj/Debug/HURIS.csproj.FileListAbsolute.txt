@@ -82,4 +82,3 @@ C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HUR
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.csproj.GenerateResource.Cache
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.exe
 C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.pdb
-C:\Users\Justine\Documents\Visual Studio 2015\Projects\HURIS\HURIS\obj\Debug\HURIS.csprojResolveAssemblyReference.cache

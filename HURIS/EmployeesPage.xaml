@@ -76,19 +76,19 @@
             <!--<Separator Grid.Row="1" Margin="0,10,0,29" Grid.RowSpan="2"></Separator>-->
         </Border>
         <Border Grid.Row="3" Grid.RowSpan="16"  Margin="43,0,49,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="900" MinHeight="490" BorderBrush="#FFBFBDBD" CornerRadius="3,3,3,3" BorderThickness="1">
-            <StackPanel VerticalAlignment="Top" Background="White" Margin="2,0,0,0">
+            <StackPanel VerticalAlignment="Top" Background="#273746" Margin="2,0,0,0" Height="58">
                 <Grid Margin="-38,0,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="btnAddEmployee" Grid.Column="1" Margin="0,4,10,24" Click="ClickButtonEvent" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right"   Width="120" FontFamily="Raleway ExtraBold">
+                    <Button x:Name="btnAddEmployee" Grid.Column="1" Margin="0,10,10,17" Click="ClickButtonEvent" BorderThickness="0" Background="#FFD1D1D1" HorizontalAlignment="Right"   Width="120" FontFamily="Raleway ExtraBold">
                         <Button.Template >
                             <ControlTemplate>
-                                <Border CornerRadius="2" BorderBrush="#FFE0DDDD" Background="#FF5499C7"  >
+                                <Border CornerRadius="2" BorderBrush="#FFE0DDDD" Background="#FF5499C7" Height="37"  >
                                     <DockPanel Margin="0,0,10,0">
-                                        <materialDesign:PackIcon Kind="AddCircle" Width="15" Height="15" Foreground="White" Margin="8 12"/>
+                                        <materialDesign:PackIcon Kind="AddCircle" Width="15" Height="15" Foreground="White" Margin="8 10"/>
                                         <TextBlock VerticalAlignment="center" Foreground="White" Margin="-5,12" Width="91" FontSize="10.667">ADD EMPLOYEE
                                         </TextBlock>
                                     </DockPanel>
@@ -100,7 +100,7 @@
                     </Button>
 
 
-                    <Label HorizontalAlignment="Left" FontSize="20" Content="EMPLOYEE LIST" Foreground="#FF211F1F" FontFamily="Montserrat" Margin="56,10,0,10"/>
+                    <Label HorizontalAlignment="Left" FontSize="20" Content="EMPLOYEE LIST" Foreground="White" FontFamily="Montserrat" Margin="56,10,0,10"/>
                 </Grid>
             </StackPanel>
         </Border>
@@ -124,9 +124,15 @@
 
         <DataGrid Name="dataGridView1" MinWidth="900" MinHeight="450"  Grid.Row="6" Grid.RowSpan="13" HorizontalAlignment="Stretch" 
           VerticalAlignment="Stretch" IsSynchronizedWithCurrentItem="False" BorderBrush="{x:Null}" Margin="43,0,49,0"
-          ColumnWidth="*"  RowBackground="#D9DFE5" AlternatingRowBackground="White" AutoGenerateColumns="True" CanUserAddRows="False" SelectionMode="Extended"  GridLinesVisibility="None" Background="White" SelectionChanged="dataGridView1_SelectionChanged" >
-            <DataGrid.Columns >
+          ColumnWidth="*"  RowBackground="#F2F3F4" AlternatingRowBackground="White" CanUserAddRows="False" SelectionMode="Extended"  GridLinesVisibility="None" Background="White" SelectionChanged="dataGridView1_SelectionChanged" HorizontalGridLinesBrush="{x:Null}" VerticalGridLinesBrush="{x:Null}" ColumnHeaderHeight="30" HeadersVisibility="Column" >
+
+            <DataGrid.Columns>
                 <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="Aqua" Background="White"></Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel  HorizontalAlignment="Center" Orientation="Horizontal"  Opacity="1">

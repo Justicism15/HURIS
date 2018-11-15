@@ -41,7 +41,6 @@ namespace HURIS
 
         private void LoadData(string Keywords)
         {
-
             Keywords = (string.IsNullOrEmpty(Keywords) == true ? "" : Keywords); //inline if-else condition
             connection.Open();
             //Connecting to  Stored Procedure
@@ -49,9 +48,7 @@ namespace HURIS
             cmd.CommandType = CommandType.StoredProcedure;
             
             //Sends the  parameter keyword to the query
-            cmd.Parameters.AddWithValue("@Keywords", Keywords);
-
-
+            cmd.Parameters.AddWithValue("@Keywords", Keywords); 
             //Loading the table
             DataTable dt = new DataTable();
             dt.Load(cmd.ExecuteReader());
@@ -70,7 +67,6 @@ namespace HURIS
             //dataGridView1.ItemsSource = dt.DefaultView;
         }
         
-    
         private void AddEmployee()
         {
             EmployeeRegistrationForm add = new EmployeeRegistrationForm();
@@ -86,8 +82,7 @@ namespace HURIS
                     LoadData(txtSearch.Text);
                 else if (sender == btnAddEmployee)
                     AddEmployee();
-                   // SaveData();
-        
+                   // SaveData();    
             }
             catch (Exception ex)
             { MessageBox.Show(ex.ToString()); }
@@ -99,8 +94,6 @@ namespace HURIS
             DataRowView rowview = dataGridView1.SelectedItem as DataRowView;
             string id = rowview.Row["EmpID"].ToString();
 
-    
-      
             EmployeeDataEditWindow edt = new EmployeeDataEditWindow(id);
             edt.Show();
      
